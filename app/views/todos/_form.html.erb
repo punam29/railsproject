@@ -1,0 +1,29 @@
+<div class="form-row align-item-center">
+<div class="container" align="center">
+<div class="row">
+<div class="col-md-4">
+
+
+<%= form_with(model: todo) do |form| %>
+  <div class="field">
+    <h><%= form.label :Task %></h1>
+    <%= form.text_field :task,class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :completed %>
+    <%= form.check_box :completed %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: 'btn btn-outline-success' %>
+  </div>
+<% end %>
+
+</div>
+</div>
+
+</div>
+
+
+</div>
